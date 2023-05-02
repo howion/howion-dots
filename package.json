@@ -1,0 +1,39 @@
+{
+    "name": "howion-dots",
+    "version": "0.9.0",
+    "description": "Howion's dotfile and boilerplate manager.",
+    "main": ".bin/bin.js",
+    "keywords": [
+        "dotfiles",
+        "boilerplate"
+    ],
+    "type": "commonjs",
+    "author": "howion",
+    "homepage": "https://github.com/howion/howion-dots",
+    "repository": "github:howion/howion-dots",
+    "files": [
+        ".bin/dist.js",
+        "dotfiles",
+        "git",
+        "nextjs",
+        "node"
+    ],
+    "license": "MIT",
+    "private": false,
+    "bin": ".bin/dist.js",
+    "scripts": {
+        "build": "yarn dev && echo '#! /usr/bin/env node\n' | cat - .bin/dist.js > .bin/temp.js && mv .bin/temp.js .bin/dist.js",
+        "dev": "npx esbuild .bin/src/main.ts --bundle --outfile=.bin/dist.js --platform=node --packages=external",
+        "start": "node .bin/dist.js"
+    },
+    "dependencies": {
+        "@types/minimist": "^1.2.2",
+        "@types/node": "^18.15.13",
+        "chalk": "4.1.2",
+        "commander": "^10.0.1",
+        "minimist": "^1.2.8"
+    },
+    "devDependencies": {
+        "esbuild": "^0.17.17"
+    }
+}

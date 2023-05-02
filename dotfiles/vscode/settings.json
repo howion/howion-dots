@@ -1,0 +1,209 @@
+{
+    // Terminal
+    "terminal.integrated.experimentalTextureCachingStrategy": "dynamic",
+    // "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.profiles.linux": {
+        "kitty": { "path": "/usr/bin/kitty" }
+    },
+
+    //--------------------------------------------------------------------------
+    // Security
+    //--------------------------------------------------------------------------
+    "security.workspace.trust.enabled": false,
+
+    //--------------------------------------------------------------------------
+    // Editor
+    //--------------------------------------------------------------------------
+    "editor.codeActionsOnSave": {
+        // "source.fixAll.eslint": true,
+    },
+    "eslint.validate": ["javascript"],
+    "editor.guides.bracketPairs": false,
+    // "editor.inlayHints.enabled": "off",
+
+    "editor.scrollbar.horizontal": "visible",
+    "editor.scrollbar.vertical": "hidden",
+
+    "explorer.enableDragAndDrop": true,
+    "explorer.confirmDelete": false,
+    "explorer.autoReveal": false,
+    "explorer.confirmDragAndDrop": false,
+    "breadcrumbs.enabled": true,
+
+    "editor.fontFamily": "'Fira Code', 'SF Mono', 'Roboto Mono', monospace",
+    "editor.fontLigatures": true,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": false,
+    "editor.fontSize": 16,
+    "editor.lineNumbers": "on",
+    "editor.mouseWheelZoom": true,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "none",
+    "editor.trimAutoWhitespace": true,
+    "editor.wordWrapColumn": 120,
+    "editor.rulers": [80, 120],
+    "editor.wordWrap": "off",
+    "editor.smoothScrolling": false,
+    "editor.showDeprecated": true,
+    "editor.suggestSelection": "first",
+    "editor.inlineSuggest.enabled": true,
+
+    "security.workspace.trust.untrustedFiles": "open",
+
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.eol": "\r\n",
+    "files.exclude": {
+        ".next/": true,
+        "**/__pycache__": true,
+        "**/react-app-env.d.ts": true,
+        "package-lock.json": true,
+        "yarn-error.log": true,
+        "yarn.lock": true
+    },
+    "files.associations": {
+        ".env": "dotenv",
+        "*.pml": "pml",
+        "*.mpa": "coffeescript",
+        "*.nn": "coffeescript"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.editor.centeredLayoutAutoResize": true,
+    "workbench.editor.showTabs": true,
+    "workbench.list.automaticKeyboardNavigation": false,
+
+    // "window.title": "${dirty}${activeEditorShort}${separator}${rootPath}",
+    "window.title": "${rootPath}",
+    "window.titleBarStyle": "custom",
+    "window.newWindowDimensions": "offset",
+
+    //--------------------------------------------------------------------------
+    // Telemetry
+    //--------------------------------------------------------------------------
+    "telemetry.enableTelemetry": false,
+
+    //--------------------------------------------------------------------------
+    // Terminal
+    //--------------------------------------------------------------------------
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+    //--------------------------------------------------------------------------
+    // Project Manager
+    //--------------------------------------------------------------------------
+    "projectManager.cacheProjectsBetweenSessions": true,
+    "projectManager.openInCurrentWindowIfEmpty": "never",
+    "projectManager.sortList": "Recent",
+    "projectManager.checkInvalidPathsBeforeListing": true,
+    "projectManager.git.maxDepthRecursion": 1,
+    "projectManager.git.ignoredFolders": [
+        "out",
+        "vso",
+        "typings",
+        "atom*",
+        "*delphi*",
+        "test",
+        "_testing",
+        // ".vscode"
+    ],
+
+    //--------------------------------------------------------------------------
+    // Python
+    //--------------------------------------------------------------------------
+    "python.analysis.typeCheckingMode": "basic",
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.defaultFormatter": null
+    },
+
+    //--------------------------------------------------------------------------
+    // Web
+    //--------------------------------------------------------------------------
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "stylelint.packageManager": "yarn",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
+
+    //--------------------------------------------------------------------------
+    // Copilot
+    //--------------------------------------------------------------------------
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "coffeescript": true,
+        "typescript": true,
+        "pml": false,
+        "python": true,
+        "css": true,
+        "html": false
+    },
+
+    //--------------------------------------------------------------------------
+    // Misc/Other
+    //--------------------------------------------------------------------------
+    "prettier.singleQuote": true,
+    "vsintellicode.modify.editor.suggestSelection": "enabled",
+
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+
+    "markdown-preview-github-styles.colorTheme": "light",
+    "workbench.colorTheme": "Adonis Darker",
+    "[jsonc]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "haskell.manageHLS": "PATH",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "workbench.sideBar.location": "right",
+    "debug.onTaskErrors": "showErrors",
+    "vscode-pets.theme": "forest",
+    "vscode-pets.petSize": "medium",
+    "vscode-pets.position": "explorer",
+    "blockman.n01LineHeight": 0,
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#1073cf2d",
+        "editor.lineHighlightBorder": "#9fced11f"
+    },
+    "diffEditor.wordWrap": "off",
+    "editor.guides.indentation": true,
+    "blockman.n04Sub04RightSideBaseOfBlocks": "Rightmost Edge Of Viewport",
+    "blockman.n16EnableFocus": false,
+    "blockman.n04ColorComboPreset": "Classic Dark Oppo (Gradients)",
+    "blockman.n04Sub02ColorComboPresetForLightTheme": "Classic Dark Oppo (Solid colors)",
+    "blockman.n21BorderRadius": 0,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "errorLens.enabled": true,
+    "react-native-tools.showUserTips": false,
+    "workbench.startupEditor": "none",
+    "typescript.tsserver.log": "verbose",
+    "errorLens.excludeBySource": [
+        "eslint(unicorn/no-null)"
+    ],
+}
