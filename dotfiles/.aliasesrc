@@ -1,31 +1,39 @@
+# shortcuts
 alias e="exit"
-alias ls="exa --oneline --long --color=automatic --color-scale --icons --all -s=type -b --changed"
 alias c="clear"
+alias :q="exit"
+alias q="exit"
+alias n="nano"
 
-alias ..="cd .."
-alias ...="cd ../.."
-
+# colorize
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias fgrep="fgrep --color=auto"
 
-alias now="date +\"%T  %d-%m-%Y\""
+# typos
+alias cd..="cd .."
+alias ..="cd .."
+alias ...="cd ../.."
 
+# improve existing commands
+alias ls="exa --oneline --long --color=automatic --color-scale --icons --all -s=type -b --changed"
 alias rm="rm -I --preserve-root"
 alias mv="mv -i"
+alias cat="ccat"
 
 alias chown="chown --preserve-root"
 alias chmod="chmod --preserve-root"
 alias chgrp="chgrp --preserve-root"
 
+# custom commands
+alias now="date +\"%T  %d-%m-%Y\""
 alias install="sudo pacman -S"
 alias update="sudo pacman -Syu && yay -Syu && flatpak update && znap pull"
 alias p="pnpm"
 alias top="bpytop"
 alias h="history"
 alias npm="sudo npm"
-alias rs="sudo redshift -P -O 3500"
-
+alias rs="sudo redshift -P -O"
 alias mount_bitlocker="sudo dislocker -V /dev/sdb2 -u -- /media/bitlocker && sudo mount -o loop /media/bitlocker/dislocker-file /media/bl-mount"
 
 # most space usage by directories and files, dependes on the current directory

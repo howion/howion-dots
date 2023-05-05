@@ -67,57 +67,57 @@ coverage
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
-# Bower dependency directory (https://bower.io/)
+# bower.io dependency directory
 bower_components
 
 # node-waf configuration
 .lock-wscript
 
-# Dependency directories
+# common dependency directories
 node_modules/
 jspm_packages/
 
-# Snowpack dependency directory (https://snowpack.dev/)
+# snowpack.dev dependency directory
 web_modules/
 
-# TypeScript cache
+# ts cache
 *.tsbuildinfo
 
-# Optional npm cache directory
+# (optional) npm cache directory
 .npm
 
-# Optional eslint cache
+# (optional) eslint cache
 .eslintcache
 
-# Microbundle cache
+# microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
 .rts2_cache_es/
 .rts2_cache_umd/
 
-# Optional REPL history
+# (optional) REPL history
 .node_repl_history
 
 # Output of 'npm pack'
-*.tgz
+# *.tgz
 
-# Yarn Integrity file
+# yarn integrity file
 .yarn-integrity
 
-# parcel-bundler cache (https://parceljs.org/)
+# parcel-bundler cache
 .cache
 .parcel-cache
 
-# Nuxt.js build / generate output
+# nuxt.js
 .nuxt
 
-# Gatsby files
+# gatsby files
 .cache/
 
 # vuepress build output
 .vuepress/dist
 
-# Serverless directories
+# serverless directories
 .serverless/
 
 # FuseBox cache
@@ -129,7 +129,7 @@ web_modules/
 # TernJS port file
 .tern-port
 
-# Stores VSCode versions used for testing VSCode extensions
+# vscode-test files
 .vscode-test
 
 # yarn v2
@@ -174,9 +174,8 @@ web_modules/
 ## Vim ##
 ######################################################################
 
-# Swap
+# swap
 [._]*.s[a-v][a-z]
-!*.svg  # comment out if you don't need vector files
 [._]*.sw[a-p]
 [._]s[a-rt-v][a-z]
 [._]ss[a-gi-z]
