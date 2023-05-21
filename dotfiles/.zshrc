@@ -1,5 +1,3 @@
-# clear
-
 # zmodload zsh/zprof
 
 RANGER_LOAD_DEFAULT_RC=false
@@ -62,7 +60,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-HIST_STAMPS="dd/mm/yyyy"
+HIST_STAMPS="%d/%m/%y"
 
 # standard plugins can be found in $ZSH/plugins/
 # custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -86,23 +84,11 @@ export EDITOR='nano'
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # opam configuration
 [[ ! -r /home/howion/.opam/opam-init/init.zsh ]] || source /home/howion/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-
-# custom aliases
-source ~/.aliasesrc
 
 # autcomplete plugin
 source ~/.repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh
@@ -118,3 +104,21 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# tabtab source for packages, uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+
+# custom aliases
+source ~/.aliasesrc
+
+# general variables
+export ARCH="x86_64"
+export LC_ALL="en_US.utf-8"
+export LC_CTYPE="en_US.utf-8"
+export LANG="en_US.utf-8"
+export TERM="xterm-256color"
+export VISUAL="nano"
+export EDITOR="nano"
+export HISTTIMEFORMAT="%h %d %H:%M:%S "
+export HISTSIZE=10000
+export HISTCONTROL=ignorespace

@@ -8,6 +8,10 @@ function copy_dots() {
         "$HOME/.aliasesrc"
         "$HOME/.nanorc"
         "$HOME/.zshrc"
+        "$HOME/.alacritty.yml"
+        "$HOME/.fehbg"
+        "$HOME/.p10k.zsh"
+        "$HOME/xorg.conf"
     )
 
     for dot in "${dots[@]}"; do

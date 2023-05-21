@@ -23,7 +23,7 @@
     "bin": ".bin/dist.js",
     "scripts": {
         "build": "yarn dev && echo '#! /usr/bin/env node\n' | cat - .bin/dist.js > .bin/temp.js && mv .bin/temp.js .bin/dist.js",
-        "dev": "npx esbuild .bin/src/main.ts --bundle --outfile=.bin/dist.js --platform=node --packages=external",
+        "dev": "esbuild .bin/src/main.ts --bundle --outfile=.bin/dist.js --platform=node --packages=external",
         "start": "node .bin/dist.js"
     },
     "dependencies": {
