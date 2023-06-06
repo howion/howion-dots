@@ -57,7 +57,7 @@ npx howion-dots boil node <destination>
 
 ## Todo
 
-- [ ] Finish `npx howion-dots`.
+- [ ] Add husky and unit tests
 - [ ] Adjust postcss and stylelint in `nextjs`.
 - [ ] Complete `node`
 
