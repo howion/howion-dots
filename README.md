@@ -58,6 +58,12 @@ npx howion-dots boil node <destination>
 ## Todo
 
 - [ ] Add husky and unit tests
+- [ ] Dynamic markdows (README, Logs, Docs)
+- [ ] Various other generators
+- [ ] Auto CI/CD (with husky support)
+- [ ] Multiple projects (nextjs zones etc), Multiple databases (KV, Graph, Relational) support.
+- [ ] Apollo vs Prisma vs ?
+- [ ] Comprehensive documentation for the boilerplates
 - [ ] Adjust postcss and stylelint in `nextjs`.
 - [ ] Complete `node`
 
