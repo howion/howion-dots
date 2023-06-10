@@ -1,7 +1,9 @@
 # improve existing commands
 alias nano="nano --linenumbers --positionlog --mouse --minibar --tabsize=4 --multibuffer --trimblanks --constantshow --autoindent --zero"
-alias ls="exa --oneline --long --color=automatic --color-scale --icons --all -s=type -b --changed"
-alias cat="ccat"
+alias ls="exa --oneline --long --color=automatic --color-scale --icons --all -s=type -b --changed -L 2 --ignore-glob=\"node_modules|.git|.next\""
+alias tree="ls --tree -L 5"
+alias less="less -r -N --use-color --mouse --wheel-lines 3"
+# alias cat="bat" ## it may be a bad idea when piping
 
 # colorize
 alias grep="grep --color=auto"
@@ -26,6 +28,7 @@ alias c="clear"
 alias :q="exit"
 alias q="exit"
 alias n="nano"
+alias vim="nvim"
 alias v="nvim"
 alias cpv="rsync -ah --info=progress2"
 alias df="df -hT"
@@ -40,9 +43,9 @@ help() {
 # custom commands
 alias now="date +\"%T  %d-%m-%Y\""
 alias install="sudo pacman -S"
-alias update="sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update --assumeyes && znap pull"
+alias update="sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update --assumeyes && znap pull && pnpm up --latest -g"
 alias p="pnpm"
-alias top="bpytop"
+alias top="sudo bpytop"
 alias h="history"
 alias npm="sudo npm"
 alias rs="sudo redshift -P -O"
